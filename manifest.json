@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Greek Noun Declension Practice",
+    "short_name": "GreekMyPhone",
+    "description": "Practice Learning Greek Noun Declensions",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/greek_icon.png",
+            "sizes": "512x512"
+        }
+    ]
+}
