@@ -9,18 +9,19 @@
       </head>
       <body>
         <h1>Greek My Phone</h1>
-        <h2 class="word">Word</h2>
-        <StackPanel>
-          <TextBlock Text="Case"/>
-          <!-- Group 1 - implicit grouping -->
-          <StackPanel Orientation="Horizontal">
-              <RadioButton Content="Nominative" Tag="nom" Group="case" Checked="BGRadioButton_Checked"/>
-              <RadioButton Content="Genitive" Tag="gen" Group="case" Checked="BGRadioButton_Checked"/>
-              <RadioButton Content="Dative" Tag="dat" Group="case" Checked="BGRadioButton_Checked"/>
-              <RadioButton Content="Accusative" Tag="acc" Group="case" Checked="BGRadioButton_Checked"
-                           IsChecked="True"/>
-          </StackPanel>
-      </StackPanel>
+        <p id="blue">Test Text</p>
+
+<form id="case_entry">
+        <input type="radio" id="nom" name="case" value="nom">
+          <label for="nom">Nominative</label>
+        <input type="radio" id="gen" name="case" value="gen">
+          <label for="gen">Genitive</label>
+        <input type="radio" id="dat" name="case" value="dat">
+          <label for="dat">Dative</label>
+        <input type="radio" id="acc" name="case" value="acc">
+          <label for="acc">Accusative</label>
+      </form>
+
         <script>
           if('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js', { scope: '/' });
