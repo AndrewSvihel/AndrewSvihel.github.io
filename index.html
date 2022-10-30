@@ -10,8 +10,17 @@
       <body>
         <h1>Greek My Phone</h1>
         <h2 class="word">Word</h2>
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
+        <StackPanel>
+          <TextBlock Text="Case"/>
+          <!-- Group 1 - implicit grouping -->
+          <StackPanel Orientation="Horizontal">
+              <RadioButton Content="Nominative" Tag="nom" Group="case" Checked="BGRadioButton_Checked"/>
+              <RadioButton Content="Genitive" Tag="gen" Group="case" Checked="BGRadioButton_Checked"/>
+              <RadioButton Content="Dative" Tag="dat" Group="case" Checked="BGRadioButton_Checked"/>
+              <RadioButton Content="Accusative" Tag="acc" Group="case" Checked="BGRadioButton_Checked"
+                           IsChecked="True"/>
+          </StackPanel>
+      </StackPanel>
         <script>
           if('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js', { scope: '/' });
