@@ -11,16 +11,26 @@
       <body>
         <h1>Greek My Phone</h1>
 
-<form id="case_entry">
+<div class="wrapper">
+  <form id="case_entry">
         <input type="radio" id="nom" name="case" value="nom">
-          <label for="nom">Nominative</label>
+          <label for="nom" class="option">
+            <span>Nominative</span>
+          </label>
         <input type="radio" id="gen" name="case" value="gen">
-          <label for="gen">Genitive</label>
+          <label for="gen" class="option">
+            <span>Genitive</span>
+          </label>
         <input type="radio" id="dat" name="case" value="dat">
-          <label for="dat">Dative</label>
+          <label for="dat" class="option">
+              <span>Dative</span>
+          </label>
         <input type="radio" id="acc" name="case" value="acc">
-          <label for="acc">Accusative</label>
+          <label for="acc" class="option">
+            <span>Accusative</span>
+          </label>
       </form>
+</div>
 
         <script>
           if('serviceWorker' in navigator) {
